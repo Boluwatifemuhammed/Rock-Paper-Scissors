@@ -1,0 +1,35 @@
+:root {
+  --bg-color: #ffffff;
+  --btn-color: #8f5cff;
+  --text-color: #222;
+  --accent-color: #8f5cff;
+  --card-color: #858585;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-navbar button{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
