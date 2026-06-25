@@ -1,8 +1,8 @@
-const choiceBtn = document.querySelectorAll(".choice-btn")
+const buttons = document.querySelectorAll(".choice-btn")
 
 // console.log(rockBtn);
 
-choiceBtn.addEventListener("click", () => {
+buttons.addEventListener("click", () => {
     const randomNumber = Math.random();
 
     if (randomNumber >=0 && randomNumber < 1/3) {
