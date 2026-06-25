@@ -33,3 +33,95 @@ body{
     border: none;
 }
 
+.scoreboard{
+    display: flex;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.score-card{
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.battle-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 15% 0 15%;
+}
+
+.player-card,
+.opponent-card{
+    border-radius: 10px;
+    border: 1px solid rgb(181, 181, 181);
+    height: 260px;
+    width: 40%;
+    text-align: center;
+}
+
+.card-title{
+    margin-top: 0.7rem;
+}
+
+.vs-cont{
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: x-large;
+    font-weight: bolder;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(181, 181, 181);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.buttons-cont{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.bottom-navbar{
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+
+    position: fixed;  
+    bottom: 0;         
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.nav-btn{
+    border: none;
+    background-color: white;
+    padding: 1rem 0.5rem;
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav-btn:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.nav-btn.active{
+    background-color: #a87fff;
+    color: white;
+}
+
+
