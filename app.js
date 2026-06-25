@@ -1,10 +1,8 @@
-const btn = document.getElementById("btn")
-const paperBtn = document.getElementById("paper-btn")
-const scissorsBtn = document.getElementById("scissors-btn")
+const choiceBtn = document.querySelectorAll(".choice-btn")
 
 // console.log(rockBtn);
 
-btn.addEventListener("click", () => {
+choiceBtn.addEventListener("click", () => {
     const randomNumber = Math.random();
 
     if (randomNumber >=0 && randomNumber < 1/3) {
