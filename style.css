@@ -2,7 +2,7 @@
   --bg-color: #ffffff;
   --btn-color: #8f5cff;
   --text-color: #222;
-  --accent-color: #8f5cff;
+  --accent-color: #181818;
   --card-color: #858585;
 }
 
@@ -26,17 +26,29 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    position: fixed;
+    padding: 30px;
+    width: 94%;
+    top: 0;
+    
 }
 .top-navbar button{
     padding: 0.5rem;
     border-radius: 8px;
-    border: none;
+    border: 2px solid rgb(181, 181, 181);
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
 }
 
 .scoreboard{
     display: flex;
     gap: 15px;
-    margin-top: 2rem;
+    margin-top: 6rem;
+    padding: 10px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 20px;
 }
 
 .score-card{
@@ -51,15 +63,15 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
-    padding: 0 15% 0 15%;
+    padding: 0 5% 0 5%;
 }
 
 .player-card,
 .opponent-card{
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid rgb(181, 181, 181);
     height: 260px;
-    width: 40%;
+    width: 60%;
     text-align: center;
 }
 
@@ -83,11 +95,59 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.vs-cont:hover{
+    /* transform: rotateZ(30deg); */
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.start-area{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 229, 229);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 2rem;
+
+}
+
+.start-btn{
+    padding: 10px;
+    width: 75%;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .buttons-cont{
+    margin-top: 2rem;
     width: 100%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.choice-btn{
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(193, 101, 255);
+    height: 70px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.choice-btn:hover{
+    transform: scale(1.1);
     
 }
 
@@ -95,13 +155,13 @@ body{
     display: flex;
     gap: 15px;
     justify-content: space-around;
-
-    position: fixed;  
+    position: sticky;  
     bottom: 0;         
     left: 0;
     z-index: 999;
     width: 100%;
     padding: 20px;
+    background-color: var(--bg-color);
     
 }
 
