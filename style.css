@@ -18,7 +18,7 @@ body{
     align-items: center;
     justify-content: center;
     /* display: flex; */
-    padding: 20px;
+    padding:  20px;
     min-height: 100vh;
 }
 
@@ -73,6 +73,8 @@ body{
     height: 260px;
     width: 60%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-title{
@@ -121,11 +123,14 @@ body{
 .start-btn{
     padding: 10px;
     width: 75%;
+    aspect-ratio: 8;
     border: none;
     background-color: var(--accent-color);
     color: var(--bg-color);
     border-radius: 10px;
     cursor: pointer;
+    font-size: 200%;
+    font-weight: 500;
 }
 
 .buttons-cont{
@@ -168,11 +173,16 @@ body{
     font-size:14px;
     font-weight:600;
     text-align:center;
+    color: var(--text-color);
 }
 
 .choice-btn:hover{
     transform: scale(1.05);
     
+}
+
+.choice-btn:active{
+    transform: scale(0.9);
 }
 
 .rock{

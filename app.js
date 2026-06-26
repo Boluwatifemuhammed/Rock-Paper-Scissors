@@ -1,7 +1,63 @@
-const buttons = document.querySelectorAll(".choice-btn")
+const buttons = document.querySelectorAll(".choice-btn");
+const aiCardContent = document.getElementById("aicard-content");
+const userCard = document.getElementById("user-card");
+const rockDiv = document.getElementById("rock-div")
+const paperDiv = document.getElementById("paper-div")
+const scissorsDiv = document.getElementById("scissors-div")
 
 // console.log(rockBtn);
 
+function showUserRock() {
+    userCard.innerHTML = rockDiv.innerHTML;
+
+}
+
+function showUserPaper() {
+    userCard.innerHTML = paperDiv.innerHTML;
+
+}
+
+function showUserScissors() {
+    userCard.innerHTML = scissorsDiv.innerHTML;
+
+}
+
+
+
+function showAiRock() {
+    aiCardContent.innerHTML = rockDiv.innerHTML;
+}
+
+function showAiPaper() {
+    aiCardContent.innerHTML = paperDiv.innerHTML;
+    
+}
+
+function showAiScissors() {
+    aiCardContent.innerHTML = scissorsDiv.innerHTML;
+    
+}
+
+
+
+buttons.forEach((button) =>{
+
+    button.addEventListener("click", () => {
+    const choice = button.dataset.choice;
+
+    if (choice === "rock") {
+        showUserRock();
+    } 
+    else if(choice === "paper"){
+        showUserPaper();
+    } else{
+        showUserScissors();
+        
+    }
+    
+    });
+
+});
 
 
 buttons.forEach((button) =>{
@@ -10,16 +66,18 @@ buttons.forEach((button) =>{
     const randomNumber = Math.random();
 
     if (randomNumber >=0 && randomNumber < 1/3) {
-        console.log("rock")
+        showAiRock();
     } 
     else if(randomNumber >= 1/3 && randomNumber < 2/3){
-        console.log("paper");
+        showAiPaper();
     } else{
-        console.log("scissors");
+        showAiScissors();
         
     }
     
     });
 
 });
+
+
 
