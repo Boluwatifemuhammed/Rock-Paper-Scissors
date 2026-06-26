@@ -133,7 +133,6 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
     gap: 15px;
 }
 
@@ -148,6 +147,7 @@ body{
 }
 .choice-btn{
     width: 100%;
+    max-width: 170px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: none;
@@ -156,13 +156,11 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    gap: 8px;
     transition: 0.5s;
     
 }
 .choice-btn img{
     width: 80%;
-    height: 80%;
     object-fit: contain;
 }
 
