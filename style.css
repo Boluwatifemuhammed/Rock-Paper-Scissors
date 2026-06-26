@@ -136,19 +136,38 @@ body{
     background-color: #fff;
 }
 .choice-btn{
-    padding: 20px;
+    width:120px;
+    height:120px;
     border-radius: 50%;
     border: none;
-    background-color: rgb(193, 101, 255);
-    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    gap: 8px;
     transition: 0.5s;
     
 }
+.choice-btn img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
 
 .choice-btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     
+}
+
+.rock{
+    background:
+    radial-gradient(circle at 30% 30%,
+    #6eff79,
+    #2db64b);
+
+    box-shadow:
+    0 0 25px rgba(45,182,75,.7);
 }
 
 .bottom-navbar{
