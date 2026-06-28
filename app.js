@@ -91,7 +91,10 @@ buttons.forEach((button) => {
       userCard.innerHTML === paperDiv.innerHTML) ||
       
       (aiCardContent.innerHTML === paperDiv.innerHTML &&
-      userCard.innerHTML === rockDiv.innerHTML)
+      userCard.innerHTML === rockDiv.innerHTML) ||
+
+      (aiCardContent.innerHTML === rockDiv.innerHTML &&
+      userCard.innerHTML === scissorsDiv.innerHTML)
       
     ) {
       moveBtn.textContent = "LOOSE"
