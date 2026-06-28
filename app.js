@@ -99,10 +99,11 @@ buttons.forEach((button) => {
     ) {
       moveBtn.textContent = "LOOSE"
     } else {
-      moveBtn.textContent = "ion know?"
+      moveBtn.textContent = "ion know"
       
     }
 
+    
     
 
   });
