@@ -4,6 +4,7 @@ const userCard = document.getElementById("user-card");
 const rockDiv = document.getElementById("rock-div")
 const paperDiv = document.getElementById("paper-div")
 const scissorsDiv = document.getElementById("scissors-div")
+const moveBtn = document.getElementById("move-btn")
 
 // console.log(rockBtn);
 
@@ -81,3 +82,20 @@ buttons.forEach((button) =>{
 
 
 
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+
+
+    if (
+      aiCardContent.innerHTML === scissorsDiv.innerHTML &&
+      userCard.innerHTML === paperDiv.innerHTML
+    ) {
+      console.log("LOOSE");
+    } else {
+      console.log("YOU WIN");
+    }
+
+    
+
+  });
+});
