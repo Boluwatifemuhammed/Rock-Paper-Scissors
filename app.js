@@ -88,11 +88,14 @@ buttons.forEach((button) => {
 
     if (
       aiCardContent.innerHTML === scissorsDiv.innerHTML &&
-      userCard.innerHTML === paperDiv.innerHTML
+      userCard.innerHTML === paperDiv.innerHTML | 
+      aiCardContent.innerHTML === paperDiv.innerHTML &&
+      userCard.innerHTML === rockDiv.innerHTML
     ) {
-      console.log("LOOSE");
+      moveBtn.textContent = "LOOSE"
     } else {
-      console.log("YOU WIN");
+      moveBtn.textContent = "ion know?"
+      
     }
 
     
