@@ -87,10 +87,12 @@ buttons.forEach((button) => {
 
 
     if (
-      aiCardContent.innerHTML === scissorsDiv.innerHTML &&
-      userCard.innerHTML === paperDiv.innerHTML | 
-      aiCardContent.innerHTML === paperDiv.innerHTML &&
-      userCard.innerHTML === rockDiv.innerHTML
+      (aiCardContent.innerHTML === scissorsDiv.innerHTML &&
+      userCard.innerHTML === paperDiv.innerHTML) ||
+      
+      (aiCardContent.innerHTML === paperDiv.innerHTML &&
+      userCard.innerHTML === rockDiv.innerHTML)
+      
     ) {
       moveBtn.textContent = "LOOSE"
     } else {
