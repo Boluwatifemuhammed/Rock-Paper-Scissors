@@ -102,8 +102,6 @@ buttons.forEach((button) => {
       moveBtn.textContent = "ion know"
       
     }
-
-    
     
 
   });
