@@ -102,13 +102,26 @@ buttons.forEach((button) => {
       userCard.innerHTML === scissorsDiv.innerHTML)
       
     ) {
-      moveBtn.textContent = "LOOSE",
+      moveBtn.textContent = "YOU LOOSE",
       result = 'loose'
+            
       
+    } else if (
+      (userCard.innerHTML === scissorsDiv.innerHTML &&
+      aiCardContent.innerHTML === paperDiv.innerHTML) ||
       
-    } else {
-      moveBtn.textContent = "ion know"
+      (userCard.innerHTML === paperDiv.innerHTML &&
+      aiCardContent.innerHTML === rockDiv.innerHTML) ||
+
+      (userCard.innerHTML === rockDiv.innerHTML &&
+      aiCardContent.innerHTML === scissorsDiv.innerHTML)
       
+    ) {
+        moveBtn.textContent = "YOU WIN",
+        result = 'win'
+    } else{
+        moveBtn.textContent = "DRAW",
+        result = 'draw'
     }
     
 
