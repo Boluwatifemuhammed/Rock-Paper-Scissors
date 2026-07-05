@@ -43,6 +43,8 @@ function showAiScissors() {
 }
 
 
+let result = 0;
+
 
 buttons.forEach((button) =>{
 
