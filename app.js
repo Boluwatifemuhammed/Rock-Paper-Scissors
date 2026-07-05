@@ -45,6 +45,11 @@ function showAiScissors() {
 
 let result = '';
 
+const score = {
+    wins: 0,
+    losses: 0,
+    draws: 0
+}
 
 buttons.forEach((button) =>{
 
@@ -123,7 +128,16 @@ buttons.forEach((button) => {
         moveBtn.textContent = "DRAW",
         result = 'draw'
     }
+
+
+    if (result === 'loose') {
+        score.losses += 1
+        lossCount = score.losses;
+    } else if(result === 'win') {
+        score.wins += 1;
+    } else {score.draws +=1}
     
+    lossCount
 
   });
 });
