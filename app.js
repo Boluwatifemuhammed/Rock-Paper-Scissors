@@ -43,7 +43,7 @@ function showAiScissors() {
 }
 
 
-let result = 0;
+let result = '';
 
 
 buttons.forEach((button) =>{
@@ -102,7 +102,10 @@ buttons.forEach((button) => {
       userCard.innerHTML === scissorsDiv.innerHTML)
       
     ) {
-      moveBtn.textContent = "LOOSE"
+      moveBtn.textContent = "LOOSE",
+      result = 'loose'
+      
+      
     } else {
       moveBtn.textContent = "ion know"
       
