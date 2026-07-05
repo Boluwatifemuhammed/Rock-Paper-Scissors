@@ -132,12 +132,16 @@ buttons.forEach((button) => {
 
     if (result === 'loose') {
         score.losses += 1
-        lossCount = score.losses;
+        lossCount.textContent = score.losses;
     } else if(result === 'win') {
         score.wins += 1;
-    } else {score.draws +=1}
+        winCount.textContent = score.wins;
+    } else {
+        score.draws +=1;
+        drawCount.textContent = score.draws
+    }
     
-    lossCount
+
 
   });
 });
