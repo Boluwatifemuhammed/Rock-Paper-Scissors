@@ -5,6 +5,9 @@ const rockDiv = document.getElementById("rock-div")
 const paperDiv = document.getElementById("paper-div")
 const scissorsDiv = document.getElementById("scissors-div")
 const moveBtn = document.getElementById("move-btn")
+const winCount = document.getElementById("wins-count")
+const losseCount = document.getElementById("losses-count")
+const winCount = document.getElementById("wins-count")
 
 // console.log(rockBtn);
 
