@@ -140,6 +140,7 @@ buttons.forEach((button) => {
         moveBtn.style.color = "white"
     })
 
+    
 
     if (result === 'loose') {
         score.losses += 1
