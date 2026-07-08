@@ -136,11 +136,11 @@ buttons.forEach((button) => {
     setTimeout(()=>{
         userCard.innerHTML = "";
         aiCardContent.innerHTML = "";
-        moveBtn.textContent = "MAKE YOUR MOVE";
+        moveBtn.textContent = "MAKE A MOVE";
         moveBtn.style.color = "white"
-    })
+    }, 3000)
 
-    
+
 
     if (result === 'loose') {
         score.losses += 1
