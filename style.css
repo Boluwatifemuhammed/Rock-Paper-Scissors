@@ -36,6 +36,12 @@ body{
     color: var(--accent-color);
     
 }
+
+.top-navbar h1{
+    font-family: 'monster racing';
+
+}
+
 .top-navbar button{
     padding: 0.5rem;
     border-radius: 8px;
@@ -52,6 +58,12 @@ body{
     padding: 10px;
     background-color: rgb(229, 229, 229);
     border-radius: 20px;
+    color: var(--accent-color);
+}
+
+.scoreboard .counter{
+    font-weight: 800;
+    font-size: 24px;
 }
 
 .score-card{
@@ -78,10 +90,22 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: var(--accent-color);
 }
 
 .card-title{
     margin-top: 0.7rem;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.card-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
 }
 
 .vs-cont{
@@ -179,12 +203,12 @@ body{
     color: var(--text-color);
 }
 
-.choice-btn:hover{
+.choice .choice-btn:hover{
     transform: scale(1.05);
     
 }
 
-.choice-btn:active{
+.choice .choice-btn:active{
     transform: scale(0.9);
 }
 

@@ -108,6 +108,8 @@ buttons.forEach((button) => {
       
     ) {
       moveBtn.textContent = "YOU LOOSE",
+      moveBtn.style.color = "red"
+
       result = 'loose'
             
       
@@ -123,11 +125,20 @@ buttons.forEach((button) => {
       
     ) {
         moveBtn.textContent = "YOU WIN",
+        moveBtn.style.color = "#19ff29"
         result = 'win'
     } else{
         moveBtn.textContent = "DRAW",
+        moveBtn.style.color = "white"
         result = 'draw'
-    }
+    } 
+
+    setTimeout(()=>{
+        userCard.innerHTML = "";
+        aiCardContent.innerHTML = "";
+        moveBtn.textContent = "MAKE YOUR MOVE";
+        moveBtn.style.color = "white"
+    })
 
 
     if (result === 'loose') {
