@@ -19,7 +19,6 @@
 body{
     align-items: center;
     justify-content: center;
-    /* display: flex; */
     padding:  20px;
     min-height: 100vh;
 }
