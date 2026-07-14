@@ -138,7 +138,7 @@ buttons.forEach((button) => {
         aiCardContent.innerHTML = "";
         moveBtn.textContent = "MAKE A MOVE";
         moveBtn.style.color = "white"
-    }, 3000)
+    }, 5000)
 
 
 
