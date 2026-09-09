@@ -9,7 +9,7 @@ const winCount = document.getElementById("wins-count")
 const lossCount = document.getElementById("losses-count")
 const drawCount = document.getElementById("draws-count")
 
-// console.log(rockBtn);
+
 
 function showUserRock() {
     userCard.innerHTML = rockDiv.innerHTML;
